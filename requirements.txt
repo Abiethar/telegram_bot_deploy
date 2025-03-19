@@ -1,0 +1,6 @@
+python-telegram-bot
+langchain
+langchain_google_genai
+langchain_community
+langchain_core
+uuid
