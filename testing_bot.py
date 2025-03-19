@@ -73,7 +73,7 @@ def handle_response(text:str) -> str:
     user_input = input()
 
     if user_input in processed:
-        print(generate_answer(text)
+        print(generate_answer(text))
         return generate_answer(text)
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
