@@ -69,8 +69,8 @@ async def generate_answer(user_input: str) -> str:
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text
-    message = await generate_answer(text)  
-    await update.message.reply_text(message)
+    print(f"Received message: {text}", flush=True)  # Debugging output
+    await update.message.reply_text("Hello! Your message was received.")
 
 async def error(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print(f"Update {update} caused error {context.error}")
